@@ -1,246 +1,424 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lê Quang Minh</title>
-<link rel="stylesheet" href="assets/snow.css" />
-<link href='img/favicon.ico' rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-<div class="snowflake">❅</div>
-</div>
-<body>
-<body>
-<script type='text/javascript'>
-            ! function(e, t, a) {
-                function n() {
-                    c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), o(), r()
-                }
 
-                function r() {
-                    for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999");
-                    requestAnimationFrame(r)
-                }
+    <link rel="shortcut icon" href="/static/favicon.ico"/>
+    <link rel="apple-touch-icon" href="/static/touch-icon-iphone.png">
+    <meta name="apple-mobile-web-app-title" content="BanhoiTuidap">
 
-                function o() {
-                    var t = "function" == typeof e.onclick && e.onclick;
-                    e.onclick = function(e) {
-                        t && t(), i(e)
-                    }
-                }
+    <title>
+    Công cụ tính tích phân online có hiển thị lời giải chi tiết
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/static/manifest.json">
+    <link rel="search" type="application/opensearchdescription+xml" title="BanhoiTuidap.com" href="/static/opensearch.xml">
+    <meta name="theme-color" content="#fff">
 
-                function i(e) {
-                    var a = t.createElement("div");
-                    a.className = "heart", d.push({
-                        el: a,
-                        x: e.clientX - 5,
-                        y: e.clientY - 5,
-                        scale: 1,
-                        alpha: 1,
-                        color: s()
-                    }), t.body.appendChild(a)
-                }
+    
+    
 
-                function c(e) {
-                    var a = t.createElement("style");
-                    a.type = "text/css";
-                    try {
-                        a.appendChild(t.createTextNode(e))
-                    } catch (t) {
-                        a.styleSheet.cssText = e
-                    }
-                    t.getElementsByTagName("head")[0].appendChild(a)
-                }
+        
+        <link rel="stylesheet" href="/static/CACHE/css/71357532743b.css" type="text/css" />
 
-                function s() {
-                    return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
-                }
-                var d = [];
-                e.requestAnimationFrame = function() {
-                    return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function(e) {
-                        setTimeout(e, 1e3 / 60)
-                    }
-                }(), n()
-            }(window, document);
-        </script>
-<style>
-i.fas.fa-check {
-    background: #1266f1;
-    color: #fff;
-    padding: 4px;
-    border-radius: 100%;
-    font-size: 8px;
-    vertical-align: middle;
-}
-         </style>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="format-detection" content="telephone=no">
-<meta name="format-detection" content="address=no">
-<meta name="author" content="Lê Quang Minh">
-<link rel="stylesheet" href="assets/main.css">
-<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-<link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css">
-<link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css">
-</body>
+        <script type="text/javascript" src="/static/CACHE/js/1b582d99a931.js"></script>
+
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="/static/lib/mathlib/mathquill/mathquill.min.css" />
+    <script src="/static/lib/mathlib/mathquill/mathquill.min.js" type="text/javascript"></script>
+    <script src="/static/lib/mathlib/mathvisual/d3.min.js" type="text/javascript"></script>
+    <script src="/static/lib/mathlib/mathvisual/function-plot.js" type="text/javascript"></script>
+
+    <meta name="description" content="Công cụ tính tích phân trực tuyến trên banhoituidap.com giải quyết hầu hết các bài toán tích phân bao gồm chi tiết các bước giải và đồ thị hàm số mô tả giúp bạn học tốt hơn môn giải tích và tham khảo cách giải những bài toán tích phân một cách dễ dàng.">
+    <meta name="keywords" content="tích phân, máy tính trực tuyến, máy tính tích phân, tích phân online, công cụ tích phân, tích phân trực tuyến, cách giải tích phân, bài toán tích phân, toán giải tích">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.banhoituidap.com/may-tinh-online/tich-phan/"/>
+    <meta property="og:image" content="https://www.banhoituidap.com/static/mathimgs/bhtd-integ-share.png"/>
+    <meta property="og:title" content="Công cụ tính tích phân online có hiển thị lời giải chi tiết" />
+    <meta property="og:description" content="Công cụ tính tích phân trực tuyến trên banhoituidap.com giải quyết hầu hết các bài toán tích phân bao gồm chi tiết các bước giải và đồ thị hàm số mô tả giúp bạn học tốt hơn môn giải tích và tham khảo cách giải những bài toán tích phân một cách dễ dàng." />
+    <meta property="fb:app_id" content="1724351460930589">
+
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8343652408888995",
+          enable_page_level_ads: true
+     });
+    </script>
+    
+
+
+
+    
+
+    <script type="application/javascript">
+        
+            USER_ID = null;
+        
+        TITLE_SEARCH_URL = "/local/search/title/"
+        POST_DISPLAY_URL = "/p/"
+    </script>
 </head>
-<div class="preloader">
-<div class="preloader__wrap">
-<div class="circle-pulse">
-<div class="circle-pulse__1"></div>
-<div class="circle-pulse__2"></div>
+<body>
+
+<div class="container" id="content">
+
+    
+    
+    
+
+
+<div class="row visible-lg visible-md" id="6rdpsq8k">
+    <div class="col-md-12 text-center bhtd-topnav">
+
+        <div class="col-md-2" id="logo">
+            <a href="/"><img src="/static/banhoituidap2.logo.png" alt="BanhoiTuidap Logo"></a>
+        </div>
+
+        <div class="col-md-5">
+            <div class="row">
+    <div class="searchbar">
+        <select type="text" id="searchform" style="width:100%"></select>
+    </div>
 </div>
-<div class="preloader__progress"><span></span></div>
+
+        </div>
+
+        
+        <div class="pull-right">
+            <a href="/accounts/login/" class="btn btn-primary btn-bhtd bhtd-intro-login">Đăng nhập</a>
+        </div>
+
+        <div class="pull-right">
+            <a href="/accounts/signup/" class="btn btn-primary btn-bhtd bhtd-intro-signup">Đăng ký</a>
+        </div>
+
+        
+
+        <div class="pull-right bhtd-intro-topic"><a href="/t/" class="bhtd-a-nav"><i class="fa fa-stethoscope" aria-hidden="true" title="Tất cả chủ đề"></i></a></div>
+
+    </div>
 </div>
+
+<div class="row visible-sm visible-xs">
+
+    <div class="col-xs-12 text-center bhtd-topnav">
+        <div class="col-xs-2" id="logo">
+            <a href="/"><img src="/static/bhtd-mobile-logo.png" alt="BanhoiTuidap Logo"></a>
+        </div>
+
+        <div class="col-xs-2">
+            <a href="/local/search/page/"><i class="fa fa-search bhtd-search-icon bhtd-a-nav"></i></a>
+        </div>
+
+        
+        <div class="pull-right bhtd-m-intro-login">
+            <a href="/accounts/login/" class="bhtd-m-a-nav">Đăng nhập</a>
+        </div>
+
+        <div class="pull-right bhtd-m-intro-signup">
+            <a href="/accounts/signup/" class="bhtd-m-a-nav">Đăng ký</a>
+        </div>
+
+        
+
+    </div>
+
 </div>
-<script>
-Swal.fire(
-'Welcome !',
-'Chào Mừng Bạn Đến Với Website Của Lê Quang Minh.',
-'success'
-)    
-</script>
-<main class="main">
-<div class="header-image">
-<div class="js-parallax" style="background-image: url(img/profile.jpg);"></div>
-</div>
-<div class="container gutter-top ">
-<header class="header box">
-<div class="header__left">
-<div class="header__photo">
-<img class="header__photo-img" src="https://graph.facebook.com/24601345/picture?width=100&height=100&access_token=6628568379|c1e620fa708a1d5696fb991c1bde5662" alt="">
-</div>
-<div class="header__base-info">
-<h2 class="title titl--h1"><b>Lê Quang Minh<img src="img/tich-xanh.png" alt="Đã Xác Minh" style="height: 24px;"></b></h2>
-<div class="skill-item" style="color: #00e1ff;"><b>Tricker - Dịch Vụ Facebook</b></div>
-<ul class="header__social">
-<li><a href="https://www.facebook.com/24601345" target="_blank"><span class="nav-link-icon mr-1">
-<i class="icon-img"><img height="20" src="img/fb.svg"></i><li><a href="https://zalo.me/0328774559" target="_blank"><span class="nav-link-icon mr-1">
-<i class="icon-img"><img height="20" src="img/zalo.png"></i>
-</span></a></li>
-</span></a></li>
-</ul>
-</div>
-</div>
-<div class="header__right">
-<ul class="header__contact">
-<li><span class="overhead"><i class="icon-img"><img height="25" src="img/mail.png"></i></span>
-<a href="/cdn-cgi/l/email-protection#7607031718111b1f181e434f4736111b171f1a5815191b" target="_blank">
-<font color="white"><b><span><span class="__cf_email__" data-cfemail="83f2f6e2ede4eeeaedebb6bab2c3e4eee2eaefade0ecee">[email&#160;protected]</span></span></b></font>
-</a>
-</li>
-<li><span class="overhead"><i class="icon-img"><img height="25" src="img/phone.png"></i></span>
-<a href="tel:0328774559" target="_blank">
-<font color="white"><b>0328774559</b></font>
-</a>
-</li>
-</ul>
-<ul class="header__contact">
-<li><span class="overhead"><i class="icon-img"><img height="25" src="img/ytb.png"></i></span><a href="https://www.youtube.com/lequanggminhhofficial" target="_blank"><font color="white"><b>lequanggminhhofficial</b></font></a></li>
-<li><span class="overhead"><i class="icon-img"><img height="25" src="img/puplic.png"></i></span>
-<font color="white"><b>Hà Nội, Việt Nam</b></font>
-</a>
-</li>
-</ul>
-</div>
-</header>
-<div class="row sticky-parent">
-<div class="col-12">
-<div class="box box-content">
-<div class="mt-1">
-<h3 class="title title--h2 first-title title__separate">Thông Tin Thanh Toán</h3>
+
+
+    
+    
+
+    
+    <div class="bhtd-container-top">
+
+    
+
+    
 <div class="row">
-<div class="col-12 col-lg-6">
-<div class="case-item">
-<img src="img/mbbank.png" height="55px">
-<div>&nbsp;
-<h4 class="title title--h4">MB Bank</h4>
-<p><b>LE QUANG MINH</b><br><b>1908888888889</b></p>
-<button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="copy('1908888888889')">COPY</button>
+    <div class="col-xs-12 col-md-12 text-center deri-navbar-about">
+    <div class="deri-navbar-logo">
+        <div class="col-xs-4 col-md-1 ">
+            <a href="/may-tinh-online/dao-ham/">Đạo hàm</a>
+        </div>
+        <div class="col-xs-4 col-md-1 math-active-page">
+            <a href="/may-tinh-online/tich-phan/">Tích phân</a>
+        </div>
+        <div class="col-xs-4 col-md-1 ">
+            <a href="/may-tinh-online/gioi-han/">Giới hạn</a>
+        </div>
+        <div class="col-xs-4 col-md-1 ">
+            <a href="/may-tinh-online/do-thi/">Đồ thị</a>
+        </div>
+    </div>
 </div>
+
+    <div class="col-xs-12 col-md-9">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h3>Tính tích phân của...</h3>
+                <form action="/may-tinh-online/tich-phan/" method="post" enctype="application/x-www-form-urlencoded" id="intstep-ma9lk7hr">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='wJUXeAWFp9V0vOvOWqzG1piNXSSfa2Jn' />
+                    <span id="mathInputSpan" class="bhtd-deri-math-field"></span>
+                    <input type="hidden" id="mathInputDeliver" name="math_input">
+                    <input type="submit" class="btn btn-primary btn-bhtd bhtd-deri-submit-butt" value="Giải">
+                    <h3>Giới hạn của tích phân (tùy chọn)</h3>
+                    <div class="bhtd-int-limit">
+                        <p>Có thể bỏ qua đối với trường hợp tích phân không xác định.</p>
+                        Đối với trường hợp tích phân xác định:
+                        $$\int_{a}^{b} \text{...}$$
+                        Bạn cần thêm vào giá trị cận dưới $a = $ <span id="spanIntLoLimit" class="bhtd-int-lowl-input"></span> và cận trên $b = $ <span id="spanIntHiLimit" class="bhtd-int-howl-input"></span>
+                    </div>
+                    <input type="hidden" id="intLoValue" name="low_limit">
+                    <input type="hidden" id="intHiValue" name="hi_limit">
+                </form>
+
+                <div class="bhtd-deri-example">
+                    <h5>Ví dụ...</h5>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('(2x^2 - 2)e^x')">$(2x^2 - 2)e^x$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\sin(x)\\cos(x)')">$\sin(x)\cos(x)$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\frac{\\atan(x)}{2x^2}')">$\frac{\text{atan}x}{2x^2}$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\acos(x)')">$\text{acos}(x)$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('2x')">$2x$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\frac{x^2+2}{2x-16}')">$\frac{x^2+2}{2x-16}$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\log(2x)')">$\log(2x)$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('10x^3')">$10x^3$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\sin^2(x)')">$\sin^2(x)$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\ln\\frac{x+1}{x-2}')">$\ln\left(\frac{x+1}{x-2}\right)$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('x^{e}')">$x^{e}$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('e^x \\sin(x)')">$e^x \sin(x)$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\sqrt[5]{3x^2}')">$\sqrt[5]{3x^2}$</span>
+                    <span class="bhtd-deri-example-span" onclick="requestIntegEg('\\tan(x)')">$\tan(x)$</span>
+                </div>
+
+                <h3>Kết quả phép tính tích phân</h3>
+                <div class="bhtd-deri-result">
+                    
+
+                    
+
+                    
+                        <div class="center bhtd-deri-step-i"><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i></div>
+                    
+                </div>
+
+                <div class="bhtd-deri-detail">
+                    <h3>Các bước tính tích phân</h3>
+                    <div class="bhtd-deri-step">
+                        
+
+                        
+                            <div class="center bhtd-deri-step-i"><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i></div>
+                        
+                    </div>
+
+                    <h3>Đồ thị mô tả hàm số và tích phân</h3>
+                    <div class="bhtd-deri-graph" id="diffgraph-29smx02ls">
+                        <span id="deriPlotting" class="bhtd-deri-graph-span"></span>
+                        <div id="integPlottingQuote"></div>
+                        <div class="center bhtd-deri-step-i" id="diffgraph-1e82x6wk"><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-md-4 visible-lg visible-md">
+                <h2>...</h2>
+                <div class="panel panel-default">
+    <div class="panel-heading center">
+        <h3 class="panel-title">Nhận dạng hàm số đã nhập</h3>
+    </div>
+    <div class="panel-body">
+        <div class="bhtd-deri-input-preview">
+            
+        </div>
+
+        
+            <div class="center bhtd-deri-step-i"><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i></div>
+        
+    </div>
 </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading center">
+        <h3 class="panel-title">Một số ký hiệu toán học</h3>
+    </div>
+    <div class="panel-body">
+        <p><code>frac</code>: phân số $\left( \frac{\Box}{\Box} \right)$</p>
+        <p><code>sqrt</code>: căn thức $\left( \sqrt{\Box} \right)$</p>
+        <p><code>nthroot</code>: căn thức bậc n $\left( \sqrt[\Box]{\Box} \right)$</p>
+        <p><code>^</code>: lũy thừa $\left( \Box^\Box \right)$</p>
+        <p><code>pi</code>: số $\pi$</p>
+        <p><code>infty</code>: số $\infty$</p>
+    </div>
 </div>
-<div class="col-12 col-lg-6">
-<div class="case-item">
-<img src="img/mbbank.png" height="55px">
-<div>&nbsp;
-<h4 class="title title--h4">MB Bank</h4>
-<p><b>LE QUANG MINH</b><br><b>9999190888888</b></p>
-<button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="copy('9999190888888')">COPY</button>
+
+<div class="panel panel-default">
+    <div class="panel-heading center">
+        <h3 class="panel-title">Hàm lượng giác</h3>
+    </div>
+    <div class="panel-body">
+        <p><code>sin</code>: hàm sin <span class="pull-right"><code>asin</code>: hàm arcsin</span></p>
+        <p><code>cos</code>: hàm cos <span class="pull-right"><code>acos</code>: hàm arccos</span></p>
+        <p><code>tan</code>: hàm tan <span class="pull-right"><code>atan</code>: hàm arctan</span></p>
+        <p><code>cot</code>: hàm cot <span class="pull-right"><code>acot</code>: hàm arccot</span></p>
+        <p><code>sec</code>: hàm sec <span class="pull-right"><code>asec</code>: hàm arcsec</span></p>
+        <p><code>csc</code>: hàm csc <span class="pull-right"><code>acsc</code>: hàm arccsc</span></p>
+        <p><code>sinh</code>: hàm sinh <span class="pull-right"><code>asinh</code>: hàm arcsinh</span></p>
+        <p><code>cosh</code>: hàm cosh <span class="pull-right"><code>acosh</code>: hàm arccosh</span></p>
+        <p><code>tanh</code>: hàm tanh <span class="pull-right"><code>atanh</code>: hàm arctanh</span></p>
+        <p><code>coth</code>: hàm coth <span class="pull-right"><code>acoth</code>: hàm arccoth</span></p>
+        <p><code>sech</code>: hàm sech <span class="pull-right"><code>asech</code>: hàm arcsech</span></p>
+        <p><code>csch</code>: hàm csch <span class="pull-right"><code>acsch</code>: hàm arccsch</span></p>
+    </div>
 </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading center">
+        <h3 class="panel-title">Chia sẻ trải nghiệm của bạn</h3>
+    </div>
+    <div class="panel-body">
+        Hello! Nếu công cụ này hữu ích đối với bạn, hãy chia sẻ nó cho mọi người nhé.
+        <div class="shareBCalculators" data-url-type="/may-tinh-online/tich-phan/"></div>
+    </div>
 </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+        
+<div class="math-sidebar center">
+    <a href="/accounts/signup/" class="center"><img src="/static/mathimgs/tham-gia-banhoituidap.png" alt="Tham gia BanhoiTuidap.com"></a>
 </div>
-<div class="col-12 col-lg-6">
-<div class="case-item">
-<img src="img/momo.png" height="55px">
-<div>&nbsp;
-<h4 class="title title--h4">Ví Momo</h4>
-<p><b>LE QUANG MINH</b><br><b>0328774559</b></p>
-<button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="copy('0328774559')">COPY</button>
+
+<div class="center">
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Sidebar300x600 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:600px"
+         data-ad-client="ca-pub-8343652408888995"
+         data-ad-slot="8953690434"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </div>
+
+
+    </div>
 </div>
+
+    </div>
+
+    
+    
+
 </div>
-<div class="col-12 col-lg-6">
-<div class="case-item">
-<img src="img/mbbank.png" height="55px">
-<div>&nbsp;
-<h4 class="title title--h4">MB Bank</h4>
-<p><b>LE QUANG MINH</b><br><b>1908218888</b></p>
-<button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="copy('1908218888')">COPY</button>
+
+
+
+<div class="footer">
+    <div class="toc">
+
+        <div class="col-xs-3 col-xs-offset-1 col-md-2 col-md-offset-3 bhtd-mt-1">
+            <div class="title bhtd-footer-title">NỘI DUNG</div>
+            <ul class="flat bhtd-footer-content">
+                <li><a href="/local/search/page/">Tìm kiếm</a></li>
+                
+                <li><a href="/t/">Chủ đề</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="col-xs-3 col-md-2 bhtd-mt-1">
+            <div class="title bhtd-footer-title">GIÚP ĐỠ</div>
+            <ul class="flat bhtd-footer-content">
+                <li><a href="/info/about/">Giới thiệu</a></li>
+                <li><a href="/info/help/">Hướng dẫn</a></li>
+                <li><a href="/info/faq/">Câu hỏi thường gặp</a></li>
+            </ul>
+        </div>
+
+        <div class="col-xs-3 col-md-2 bhtd-mt-1">
+            <div class="title bhtd-footer-title">BANHOITUIDAP</div>
+            <ul class="flat bhtd-footer-content">
+              <li><a href="/p/1/">Phản hồi</a></li>
+              
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-md-12 bhtd-hr-custom">
+        <hr>
+    </div>
+
+
+    <div class="text-center">
+        <div class="col-md-12 bhtd-footer-policy">
+            Sử dụng nội dung trên website đồng nghĩa với việc bạn chấp nhận <a href="/info/policy/">Chính sách bảo mật và Điều khoản</a> của chúng tôi.
+            <br>
+            &#169; 2019 - BanhoiTuidap.com
+        </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<footer class="footer">Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script><a href="https://www.facebook.com/24601345" target="_blank"> Lê Quang Minh</a>. All Rights Reserved
-<br>
-Anti DDoS By <a href="#">Tran Bao Kha </a>
-</footer>
-</div>
-</div>
-</div>
-</main>
-<svg class="svg-defs">
-<clippath id="avatar-box">
-<path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"></path>
-</clippath>
-<clippath id="avatar-hexagon">
-<path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"></path>
-</clippath>
-</svg>
-<div class="back-to-top"></div>
-<script>
-function copy(text) {
-  document.body.insertAdjacentHTML("beforeend","<div id=\"copy\" contenteditable>"+text+"</div>")
-  document.getElementById("copy").focus();
-  document.execCommand("selectAll");
-  document.execCommand("copy");
-  document.getElementById("copy").remove();
-  Swal.fire(
-  'Copy !',
-  'Sao Chép Thành Công',
-  'success'
-)
+
+
+
+<script type="text/x-mathjax-config">
+var isFirefox="undefined"!=typeof InstallTrigger,isSafari=/constructor/i.test(window.HTMLElement)||"[object SafariRemoteNotification]"===(!window.safari||"undefined"!=typeof safari&&safari.pushNotification).toString();isFirefox||isSafari?MathJax.Hub.Config({extensions:["tex2jax.js"],jax:["input/TeX","output/NativeMML"],messageStyle:"none",processSectionDelay:0,showMathMenu:!1,processUpdateTime:0,processUpdateDelay:0,tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0}}):MathJax.Hub.Config({extensions:["tex2jax.js"],jax:["input/TeX","output/CommonHTML"],messageStyle:"none",showMathMenu:!1,processSectionDelay:0,processUpdateTime:0,processUpdateDelay:0,tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0}});
+</script>
+
+<script type="text/javascript" src="/static/lib/MathJax-2.7.5/MathJax.js?config=TeX-AMS_CHTML" async></script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.banhoituidap.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.banhoituidap.com/local/search/page/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.banhoituidap.com",
+  "logo": "https://www.banhoituidap.com/static/bhtd-medium-logo.png"
 }
 </script>
-<script data-cfasync="false" src="assets/emailcontact.js"></script>
-<script src="assets/js/jquery-3.4.1.min.js"></script>
-<script src="assets/js/plugins.min.js"></script>
-<script src="assets/js/common.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.min.js"></script>
-<script src="assets/demo/plugins-demo.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-110301607-1']);
+        _gaq.push(['_setDomainName', 'banhoituidap.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+
+
 </body>
 </html>
